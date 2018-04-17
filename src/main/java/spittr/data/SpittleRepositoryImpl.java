@@ -16,4 +16,9 @@ public class SpittleRepositoryImpl implements SpittleRepository {
         list.add(new Spittle("Third!", new Date(), 16.3, 87.3));
         return list;
     }
+
+    public Spittle findOne(long id) {
+        //TODO
+        return new Spittle("Hello world! First ever spittle", new Date());
+    }
 }

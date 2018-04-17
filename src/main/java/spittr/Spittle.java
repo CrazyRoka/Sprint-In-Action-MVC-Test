@@ -13,8 +13,7 @@ public class Spittle {
     public Spittle(String message, Date time) {
         this(message, time, null, null);
     }
-    public Spittle(
-            String message, Date time, Double longitude, Double latitude) {
+    public Spittle(String message, Date time, Double longitude, Double latitude) {
         this.id = counter++;
         this.message = message;
         this.time = time;
