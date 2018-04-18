@@ -4,7 +4,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 
 import java.util.Date;
 public class Spittle {
-    volatile static int counter = 1;
+    volatile static long counter = 1;
     private final long id;
     private final String message;
     private final Date time;
