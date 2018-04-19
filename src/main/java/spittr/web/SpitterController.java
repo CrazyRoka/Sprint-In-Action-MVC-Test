@@ -34,10 +34,7 @@ public class SpitterController {
     public String processRegistration(
             @Valid Spitter spitter,
                     Errors errors) {
-        System.out.println("here");
-        System.out.println(errors.hasErrors());
         if (errors.hasErrors()) {
-            System.out.println("Here too");
             return "redirect:/spitter/register";
         }
         spitterRepository.save(spitter);
